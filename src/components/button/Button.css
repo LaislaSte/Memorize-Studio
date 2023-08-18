@@ -12,7 +12,7 @@
 .btn:hover {
     transform: scaleY(.6rem);
     background: none;
-    /* color: var(--TEXT); */
+    color: var(--TEXT);
 }
 
 .primary {

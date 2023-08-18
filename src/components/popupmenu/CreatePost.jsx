@@ -68,7 +68,6 @@ const CreatePost = ({ funPopUp }) => {
     const sendPost = async (e) => {
         e.preventDefault();
         const file = e.target[5]?.files[0];
-        console.log(file);
         //se não houver um file, cadastra imagem como null
         if (!file) {
             //cadastrado informações do post

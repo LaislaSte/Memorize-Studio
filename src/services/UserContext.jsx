@@ -312,6 +312,19 @@ export const CostumerProvider = ({ children }) => {
             //função do provider para deslogar
             signOut(auth);
             setUser(null);
+            setUid(null);
+            setId('');
+            setImgUrl(null);
+            setBios('');
+            setName('');
+            setCategorys('');
+            setFollowing([]);
+            setFollowers([]);
+            setAuthProviderUser('');
+            setUposts([]);
+            setReviews([]);
+            setAllReviews([]);
+            setNotificatio(false);
             navigate('/');
         } catch (error) {
             console.log(error);
@@ -421,6 +434,8 @@ export const CostumerProvider = ({ children }) => {
             await updateDoc(doc(db, "users", id), {
                 following: arrayUnion(euid)
             });
+            getUsers();
+            alert('adicionado aos seguidos');
         } catch (error) {
             console.log(error);
         }
@@ -436,6 +451,8 @@ export const CostumerProvider = ({ children }) => {
             await updateDoc(doc(db, "users", eid), {
                 followers: arrayUnion(uid)
             });
+            getUsers();
+            alert('add novo seguidor ao perfil');
         } catch (error) {
             console.log(error)
         }
@@ -447,7 +464,8 @@ export const CostumerProvider = ({ children }) => {
             await updateDoc(doc(db, "users", id), {
                 following: arrayRemove(euid)
             });
-            alert('adicionando na lista de seguindo');
+            getUsers();
+            alert('removendo da lista de seguindo');
         } catch (error) {
             console.log(error);
             alert(error.message);
@@ -464,6 +482,8 @@ export const CostumerProvider = ({ children }) => {
             await updateDoc(doc(db, "users", eid), {
                 followers: arrayRemove(uid)
             });
+            getUsers();
+            alert('removido dos seguidos');
         } catch (error) {
             console.log(error);
             alert(error.message);

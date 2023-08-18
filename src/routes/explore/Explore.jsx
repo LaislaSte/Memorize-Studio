@@ -15,7 +15,6 @@ import CreateButton from "../../components/createbutton/CreateButton";
 import Input from "../../components/input/Input";
 import SearchUser from "./SearchUser";
 import Categorys from "../../components/categorys/Categorys";
-import Modal from '../../components/modal/Modal';
 
 const Explore = () => {
     //states for search
@@ -38,7 +37,6 @@ const Explore = () => {
         <>
             <header className="header-content-explore">
                 <Navbar />
-                <Modal />
                 <CreateButton />
 
                 <div className="aa">
@@ -48,7 +46,7 @@ const Explore = () => {
                 </div>
 
                 {/* elementos para pesquisa */}
-                <ul className='menu-item-category' onChange={(e) => { setQuery(e.target.value); }} >
+                <ul className='menu-item-category'>
                     {categorys
                         ? (
                             <>

@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.post-coments-container .content-post {
+    padding: 2rem;
+}
+
 @media (min-width: 800px) {
     .post-coments-container {
         border: 1px solid #049dbf63;

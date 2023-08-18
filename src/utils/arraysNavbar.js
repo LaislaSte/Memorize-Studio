@@ -18,7 +18,7 @@ export const SidebarDataPublic = [
     },
     {
         title: 'Sobre',
-        path: '/about-us',
+        path: '/aboutus',
         icon: <BiInfoCircle />,
         cName: 'nav-text'
     },

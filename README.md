@@ -141,6 +141,7 @@ Publica
 - mudança de estilo no botao de seguir e para de seguir na pagina de usuario externos [ok]
 - comentários [ok]
 
+- implementar uma IA que identifique as coerencias entre os assuntos e as categorias
 - criar página de notificações (quem esta seguinto ou quantas revisões tem um post por usuário (como um like))
 - utilizar CryptoJs para criptografar tokens dos users
 - criar paginas para os links do footer (estruturar lugar para os textos)

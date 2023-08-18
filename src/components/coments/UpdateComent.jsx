@@ -114,7 +114,7 @@ const UpdateComent = ({
                             <InputImg
                                 setImage={setImage}
                                 className='container-img-upload-preview cursor-pointer'
-                                imgPreview={image?.preview || imageDefault || imgURL}
+                                imgPreview={image?.preview || img || imageDefault || imgURL}
                                 imgPreviewClassName='upload-preview'
                             />
                         </div>

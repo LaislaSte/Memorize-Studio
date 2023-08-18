@@ -27,12 +27,13 @@ const Profile = () => {
 
     // imports
     const [user, loading, error] = useAuthState(auth);
-    const { bios, imgUrl, name, uposts, getUserId, following, followers, users } = UserAuth();
+    const { bios, imgUrl, name, uposts, getUserId, following, followers, getReviews, users } = UserAuth();
 
     // useeffect
     useEffect(() => {
         const callUser = () => {
             getUserId();
+            getReviews();
         }
         callUser()
 

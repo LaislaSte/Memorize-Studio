@@ -11,6 +11,11 @@
 # production
 /build
 
+.firebase
+.firebaserc
+
+src/services/Banco.js
+
 # misc
 .DS_Store
 .env.local

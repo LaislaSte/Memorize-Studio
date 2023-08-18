@@ -33,7 +33,7 @@
     color: var(--TEXT_LIGHT);
 }
 
-.register-container input {
+.register-container form .input-container input {
     color: var(--TEXT_LIGHT);
 }
 
