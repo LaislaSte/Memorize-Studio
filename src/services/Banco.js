@@ -4,14 +4,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA9IB_ETAV_djLH10IFLhLPNi7YaXeH-6w",
-    authDomain: "memorize-studio.firebaseapp.com",
-    databaseURL: "https://memorize-studio-default-rtdb.firebaseio.com",
-    projectId: "memorize-studio",
-    storageBucket: "memorize-studio.appspot.com",
-    messagingSenderId: "146572929428",
-    appId: "1:146572929428:web:918580ab4b5068513d0781",
-    measurementId: "G-9008EBEE1R"
+    apiKey: "api-key",
+    authDomain: "auth-domain",
+    databaseURL: "database-url",
+    projectId: "project-id",
+    storageBucket: "bucket",
+    messagingSenderId: "messagin-sender-id",
+    appId: "app-id",
+    measurementId: "measurement-id"
 };
 
 const app = initializeApp(firebaseConfig);
